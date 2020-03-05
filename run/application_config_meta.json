@@ -1,0 +1,290 @@
+{
+  "session": {
+    "maxAge": "/Users/liujianhui/projects/electron-app/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/liujianhui/projects/electron-app/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/liujianhui/projects/electron-app/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/liujianhui/projects/electron-app/node_modules/egg-session/config/config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+    "csrf": {
+      "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+    },
+    "xframe": {
+      "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "helper": {
+    "shtml": "/Users/liujianhui/projects/electron-app/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/liujianhui/projects/electron-app/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/liujianhui/projects/electron-app/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/liujianhui/projects/electron-app/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/liujianhui/projects/electron-app/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/liujianhui/projects/electron-app/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/liujianhui/projects/electron-app/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/liujianhui/projects/electron-app/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/liujianhui/projects/electron-app/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/liujianhui/projects/electron-app/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/liujianhui/projects/electron-app/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/liujianhui/projects/electron-app/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/liujianhui/projects/electron-app/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/liujianhui/projects/electron-app/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/liujianhui/projects/electron-app/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/liujianhui/projects/electron-app/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/liujianhui/projects/electron-app/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/liujianhui/projects/electron-app/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/liujianhui/projects/electron-app/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/liujianhui/projects/electron-app/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/liujianhui/projects/electron-app/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/liujianhui/projects/electron-app/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/liujianhui/projects/electron-app/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/liujianhui/projects/electron-app/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/liujianhui/projects/electron-app/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/liujianhui/projects/electron-app/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/liujianhui/projects/electron-app/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/liujianhui/projects/electron-app/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/liujianhui/projects/electron-app/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/liujianhui/projects/electron-app/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/liujianhui/projects/electron-app/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/liujianhui/projects/electron-app/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/liujianhui/projects/electron-app/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/liujianhui/projects/electron-app/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/liujianhui/projects/electron-app/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/liujianhui/projects/electron-app/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/liujianhui/projects/electron-app/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/liujianhui/projects/electron-app/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/liujianhui/projects/electron-app/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/liujianhui/projects/electron-app/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/liujianhui/projects/electron-app/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/liujianhui/projects/electron-app/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/liujianhui/projects/electron-app/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "name": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "keys": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "version": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "description": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "main": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "scripts": {
+      "start": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "dev": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "build": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "run-server": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+    },
+    "author": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "license": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "devDependencies": {
+      "@babel/core": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "@babel/preset-env": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "astroturf": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "babel-loader": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "babel-plugin-lodash": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "copy-webpack-plugin": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "css-loader": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "electron": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "file-loader": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "friendly-errors-webpack-plugin": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "html-webpack-plugin": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "less-loader": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "mini-css-extract-plugin": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "postcss-loader": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "pug-plain-loader": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "sass-loader": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "url-loader": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "vue": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "vue-loader": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "vue-template-compiler": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "webpack": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "webpack-chain": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "webpack-cli": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "webpack-dev-server": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "webpack-merge": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "egg": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+    }
+  },
+  "baseDir": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "strict": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "depth": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "env": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "level": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "logging": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "port": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/liujianhui/projects/electron-app/node_modules/egg/config/config.default.js"
+}

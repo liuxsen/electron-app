@@ -1,0 +1,120 @@
+2020-03-05 18:43:10,889 ERROR 92167 [-/127.0.0.1/-/8ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/liujianhui/projects/electron-app/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/Users/liujianhui/projects/electron-app/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/Users/liujianhui/projects/electron-app/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/liujianhui/projects/electron-app/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 92167
+hostname: bogon
+
+2020-03-05 18:43:50,706 ERROR 92184 [-/127.0.0.1/-/12ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/liujianhui/projects/electron-app/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/Users/liujianhui/projects/electron-app/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/Users/liujianhui/projects/electron-app/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/liujianhui/projects/electron-app/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 92184
+hostname: bogon
+
+2020-03-05 18:43:51,859 ERROR 92184 [-/127.0.0.1/-/1ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/liujianhui/projects/electron-app/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/Users/liujianhui/projects/electron-app/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/Users/liujianhui/projects/electron-app/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/liujianhui/projects/electron-app/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 92184
+hostname: bogon
+
+2020-03-05 18:44:07,336 ERROR 92213 [-/127.0.0.1/-/9ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/liujianhui/projects/electron-app/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/Users/liujianhui/projects/electron-app/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/Users/liujianhui/projects/electron-app/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/liujianhui/projects/electron-app/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 92213
+hostname: bogon
+
+2020-03-05 18:44:09,040 ERROR 92213 [-/127.0.0.1/-/2ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/liujianhui/projects/electron-app/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/Users/liujianhui/projects/electron-app/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/Users/liujianhui/projects/electron-app/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/liujianhui/projects/electron-app/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 92213
+hostname: bogon
+
+2020-03-05 18:45:23,909 ERROR 92260 [-/127.0.0.1/-/7ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/liujianhui/projects/electron-app/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/Users/liujianhui/projects/electron-app/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/Users/liujianhui/projects/electron-app/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/liujianhui/projects/electron-app/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 92260
+hostname: bogon
+
+2020-03-05 18:46:14,458 ERROR 92260 [-/127.0.0.1/-/1ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/liujianhui/projects/electron-app/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/Users/liujianhui/projects/electron-app/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/Users/liujianhui/projects/electron-app/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/liujianhui/projects/electron-app/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 92260
+hostname: bogon
+
+2020-03-05 18:46:15,456 ERROR 92260 [-/127.0.0.1/-/1ms GET /] nodejs.Error: Please set config.keys first
+    at Application.get keys [as keys] (/Users/liujianhui/projects/electron-app/node_modules/egg/lib/application.js:266:15)
+    at Object.get cookies [as cookies] (/Users/liujianhui/projects/electron-app/node_modules/egg/app/extend/context.js:22:66)
+    at Object.get [egg-security#CSRF_SECRET] (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:86:33)
+    at Object.ensureCsrfSecret (/Users/liujianhui/projects/electron-app/node_modules/egg-security/app/extend/context.js:97:13)
+    at csrf (/Users/liujianhui/projects/electron-app/node_modules/egg-security/lib/middlewares/csrf.js:15:11)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:42:32)
+    at /Users/liujianhui/projects/electron-app/node_modules/egg-security/node_modules/koa-compose/index.js:34:12
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+    at session (/Users/liujianhui/projects/electron-app/node_modules/koa-session/index.js:41:13)
+    at dispatch (/Users/liujianhui/projects/electron-app/node_modules/koa/node_modules/koa-compose/index.js:42:32)
+
+pid: 92260
+hostname: bogon
+

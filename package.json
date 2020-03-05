@@ -1,0 +1,44 @@
+{
+  "name": "electron-app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app/main/index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js",
+    "build": "webpack --config ./build/webpack.prod.js",
+    "run-server": "egg-bin dev --baseDir app/main/server"
+  },
+  "author": "liuxsen <948771968@qq.com> (http://github.com/liuxsen)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "~7.7.2",
+    "@babel/preset-env": "~7.7.6",
+    "astroturf": "^0.10.2",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-lodash": "^3.3.4",
+    "copy-webpack-plugin": "~5.0.5",
+    "css-loader": "^3.4.2",
+    "electron": "^5.0.6",
+    "file-loader": "^5.1.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^8.0.2",
+    "url-loader": "^3.0.0",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.42.0",
+    "webpack-chain": "^6.4.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "egg": "^2.26.0"
+  }
+}
