@@ -19,7 +19,7 @@ const getMainWindowOptions = (width=1000, height= 670) => {
 const createMainWindow = (width = 900, height = 500, hash = '') => {
   console.log(`Creating main window`);
   const browserWindow = new BrowserWindow(getMainWindowOptions(width, height));
-    browserWindow.loadURL(`http://localhost:8081/`);
+    browserWindow.loadURL(`http://localhost:8080/`);
     browserWindow.webContents.once('dom-ready', ()=>{
     browserWindow.show();
   });

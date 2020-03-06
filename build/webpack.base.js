@@ -10,6 +10,7 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
+  target: 'electron-renderer',
   entry: resolvePath('app/render/index.js'),
   output: {
     path: resolvePath('dist'),
