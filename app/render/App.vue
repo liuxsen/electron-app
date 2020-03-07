@@ -12,6 +12,9 @@
 </template>
 
 <script>
+import http from 'http';
+// import spawn from 'cross-spawn';
+const { spawn } = require('child_process');
 export default {
   data () {
     return {
@@ -31,6 +34,38 @@ export default {
     }
   },
   methods: {
+    execFFmpeg(){
+      var fs = require('fs');
+      var ffmpeg = require('fluent-ffmpeg');
+      const {remote} = require('electron');
+      const {appPath} = remote.getGlobal('shareObject');
+      const ffmpegPath = appPath + '/app/lib/ffmpeg-mac/bin/ffmpeg'
+      let command = null;
+      command = ffmpeg()
+                .setFfmpegPath(ffmpegPath)
+                .input('http://127.0.0.1:3003/stream.webm')
+                .addOptions([
+                    '-vcodec libx264',
+                    '-preset ultrafast',
+                    '-acodec libmp3lame',
+                    '-pix_fmt yuv422p'
+                ])
+                .format('flv')
+                .on('start', function (commandLine) {
+                    console.log('[' + new Date() + '] Vedio is Pushing !');
+                    console.log('commandLine: ' + commandLine);
+                })
+                .on('error', function (err, stdout, stderr) {
+                    console.log('error: ' + err.message);
+                    console.log('stdout: ' + stdout);
+                    console.log('stderr: ' + stderr);
+                })
+                .on('end', function () {
+                    console.log('[' + new Date() + '] Vedio Pushing is Finished !');
+                })
+                .output('rtmp://127.0.0.1/live/stream')
+                .run()
+    },
     getScreenStream(){
       const {desktopCapturer} = require('electron');
       console.log(desktopCapturer)
@@ -61,12 +96,49 @@ export default {
         }
       })
       .then((stream) => this.handleStream(stream))
-      .catch((e) => handleError(e))
+      .catch((e) => console.log(e))
     },
     handleStream(stream){
+      this.stream = stream;
       const video = this.$refs.video;
       video.srcObject = stream
       video.onloadedmetadata = (e) => video.play()
+      this.pushStreamToServer();
+      setTimeout(()=>{
+        this.execFFmpeg();
+      }, 3000)
+    },
+    readBlob(blob) {
+      return new Promise(resolve => {
+        let r = new FileReader();
+        r.onload = () => {
+            resolve(r.result);
+        };
+        r.readAsArrayBuffer(blob);
+      });
+    },
+    pushStreamToServer () {
+      let server = http.createServer((req, res) => {
+        if(req.url === '/stream.webm'){
+          res.setHeader("Content-Type", "video/webm");
+          let mr = new MediaRecorder(this.stream, {mimeType: 'video/webm; codecs="opus,vp8"'})
+          mr.ondataavailable = async e => {
+            res.write(Buffer.from(await this.readBlob(e.data)), err=> {
+              if(err){
+                mr.stop;
+              }
+            })
+          }
+          mr.start(300);
+        }else{
+          res.end('not found')
+        }
+      }).listen(3003, ()=>{
+        console.log('server is listening at 127.0.0.1:3003')
+      })
+      server.on('error', (err)=>{
+        console.log(err);
+      })
     }
   },
   mounted(){

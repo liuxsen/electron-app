@@ -11,6 +11,9 @@ const onReady = async () => {
 
 function main(){
   app.on('ready', onReady);
+  global.shareObject = {
+    appPath: app.getAppPath(),
+  }
 }
 
 main();

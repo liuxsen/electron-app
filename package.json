@@ -43,6 +43,9 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "egg": "^2.26.0"
+    "babel-polyfill": "^6.26.0",
+    "cross-spawn": "^7.0.1",
+    "egg": "^2.26.0",
+    "fluent-ffmpeg": "git+https://github.com/fluent-ffmpeg/node-fluent-ffmpeg.git"
   }
 }

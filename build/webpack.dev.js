@@ -10,7 +10,7 @@ const config = merge(baseConfig, {
     host: '127.0.0.1',
     hot: true,
     overlay: {
-      warnings: true,
+      // warnings: true,
       errors: true
     },
     publicPath: '/', // 打包的文件放在的目录
