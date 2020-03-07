@@ -1,8 +1,10 @@
 <template lang="pug">
   div
     video(ref="video", controls autoplay)
+    div flv直播
+    video(ref="videoflv" controls)
     div
-      button 开始共享
+      button(@click="playFlv") 拉流
     div 当前共享桌面 {{ selectScreenId }}
     div(
       @click="fnClickSelectScreen(item)"
@@ -13,6 +15,8 @@
 
 <script>
 import http from 'http';
+import flvjs from './lib/flv.min.js';
+console.log(flvjs)
 // import spawn from 'cross-spawn';
 const { spawn } = require('child_process');
 export default {
@@ -34,6 +38,18 @@ export default {
     }
   },
   methods: {
+    playFlv(){
+      if (flvjs.isSupported()) {
+        var videoElement = this.$refs.videoflv;
+        var flvPlayer = flvjs.createPlayer({
+            type: 'flv',
+            url: 'http://127.0.0.1/live?port=1935&app=myapp&stream=stream'
+        });
+        flvPlayer.attachMediaElement(videoElement);
+        flvPlayer.load();
+        flvPlayer.play();
+      }
+    },
     execFFmpeg(){
       var fs = require('fs');
       var ffmpeg = require('fluent-ffmpeg');
@@ -43,6 +59,7 @@ export default {
       let command = null;
       command = ffmpeg()
                 .setFfmpegPath(ffmpegPath)
+                .videoBitrate('1024k')
                 .input('http://127.0.0.1:3003/stream.webm')
                 .addOptions([
                     '-vcodec libx264',
@@ -63,7 +80,10 @@ export default {
                 .on('end', function () {
                     console.log('[' + new Date() + '] Vedio Pushing is Finished !');
                 })
-                .output('rtmp://127.0.0.1/live/stream')
+                // rtmp://example.com[:port]/appname/streamname
+                // http://127.0.0.1:1985/live?app=live&stream=stream
+                // http://127.0.0.1/live?port=1935&app=myapp&stream=stream
+                .output('rtmp://127.0.0.1/myapp/stream')
                 .run()
     },
     getScreenStream(){
