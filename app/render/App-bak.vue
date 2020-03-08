@@ -1,8 +1,7 @@
 <template lang="pug">
   div
     div 获取摄像头流
-    video(ref="videoMedia" controls autoplay muted)
-    audio(ref="audoRef" autoplay)
+    video(ref="videoMedia" controls autoplay)
     button(@click="stopVideo") 暂停获取摄像头
     button(@click="startVideo") 开始直播
     video(ref="video", controls autoplay)
@@ -75,16 +74,9 @@ export default {
       // 给canvas设置摄像头流
       playerCanvas.setCameraVideo(this.createVideoElementWithStream(cameraStream));
       // 给canvas设置屏幕流
-      playerCanvas.setScreenVideo(this.createVideoElementWithStream(this.screenStream));
+      playerCanvas.setScreenVideo(this.createVideoElementWithStream(screenStream));
       // 获取canvas流
       const canvasStream = playerCanvas.canvas.captureStream();
-      console.log(canvasStream)
-      audioStream.getAudioTracks().forEach(audioTrack => {
-        canvasStream.addTrack(audioTrack);
-      });
-      // this.$refs.videoMedia.srcObject= canvasStream;
-      await this.pushStreamToServer(canvasStream);
-      this.execFFmpeg();
     },
     stopVideo(){
       this.videoStream.getTracks().forEach(function(track) {
@@ -139,7 +131,7 @@ export default {
                 .output('rtmp://127.0.0.1/myapp/stream')
                 .run()
     },
-    async getScreenStream(){
+    getScreenStream(){
       const {desktopCapturer} = require('electron');
       console.log(desktopCapturer)
       desktopCapturer.getSources({types: ['window', 'screen'], thumbnailSize: {
@@ -150,11 +142,11 @@ export default {
         this.windowList = sources;
       })
     },
-    async fnClickSelectScreen(item){
+    fnClickSelectScreen(item){
       this.selectScreenId = item.id;
       this.catchScreenStream(item.id);
     },
-    async catchScreenStream (screenId) {
+    catchScreenStream (screenId) {
       navigator.mediaDevices.getUserMedia({
         audio: false,
         video: {
@@ -168,10 +160,7 @@ export default {
           }
         }
       })
-      .then((stream) => {
-        this.screenStream = stream;
-        return stream;
-      })
+      .then((stream) => this.handleStream(stream))
       .catch((e) => console.log(e))
     },
     handleStream(stream){
@@ -193,34 +182,32 @@ export default {
         r.readAsArrayBuffer(blob);
       });
     },
-    pushStreamToServer (stream) {
-      return new Promise((resolve, reject)=>{
-        let server = http.createServer((req, res) => {
-          if(req.url === '/stream.webm'){
-            res.setHeader("Content-Type", "video/webm");
-            let mr = new MediaRecorder(stream, {mimeType: 'video/webm; codecs="opus,vp8"'})
-            mr.ondataavailable = async e => {
-              res.write(Buffer.from(await this.readBlob(e.data)), err=> {
-                if(err){
-                  mr.stop;
-                }
-              })
-            }
-            mr.start(300);
-          }else{
-            res.end('not found')
+    pushStreamToServer () {
+      let server = http.createServer((req, res) => {
+        if(req.url === '/stream.webm'){
+          res.setHeader("Content-Type", "video/webm");
+          let mr = new MediaRecorder(this.stream, {mimeType: 'video/webm; codecs="opus,vp8"'})
+          mr.ondataavailable = async e => {
+            res.write(Buffer.from(await this.readBlob(e.data)), err=> {
+              if(err){
+                mr.stop;
+              }
+            })
           }
-        }).listen(3003, ()=>{
-          console.log('server is listening at 127.0.0.1:3003')
-          resolve()
-        })
-        this.server = server;
-        server.on('error', reject)
+          mr.start(300);
+        }else{
+          res.end('not found')
+        }
+      }).listen(3003, ()=>{
+        console.log('server is listening at 127.0.0.1:3003')
+      })
+      server.on('error', (err)=>{
+        console.log(err);
       })
     }
   },
   mounted(){
-    this.getScreenStream();
+    // this.getScreenStream();
     // this.getMediaVideo()
   }
 }
